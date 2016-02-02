@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BddCompanyWebsite</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Six+Caps|Oswald|Fjalla+One' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<%= image_tag '/bennett_logo_trans.png', :id=>'logo' %>
+	<header>
+		<div class="nav">
+			<ul>
+				<li><%= link_to 'ABOUT', '#' %></li>
+				<li><%= link_to 'SERVICES', '#' %></li>
+				<li><%= link_to 'WORK', '#' %></li>
+				<li><%= link_to 'CONTACT', '#' %></li>
+			</ul>
+		</div>
+	</header>
+
+<%= yield %>
+
+</body>
+</html>
