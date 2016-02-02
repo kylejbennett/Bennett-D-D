@@ -1,18 +1,224 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$logo: #C5522F;
+$logo: #A23737;
+$blue: #00EED9;
 
 body, html{
 	height: 100%;
 }
 
-.banner{
+.welcome-banner{
 	z-index: -1;
 	width: 100%;
 	height: 100%;
 	background-image: url('/work_background.jpeg');
 	background-size: cover;
+	background-attachment: fixed;
 }
 
+.welcome-intro{
+	text-align: center;
+	margin: 150px 200px;
 
+	h3{
+		font-family: 'Ubuntu';
+		font-weight: lighter;
+		color: $blue;
+		margin: 0;
+	}
+
+	h1{
+		font-family: 'Oswald';
+		margin: 0;
+	}
+
+	h2{
+		font-family: 'Lato';
+		color: #948F8F;
+	}
+
+	a{
+		font-family: 'Lato';
+		font-weight: bold;
+		text-decoration: none;
+		color: $logo;
+		padding: 10px;
+		border: 1px solid $logo;
+	}
+
+	a:hover{
+		background-color: $logo;
+		color: white;
+	}
+}
+
+.welcome-images{
+	z-index: -1;
+	width: 100%;
+	height: 750px;
+	background-image: url('/work_background.jpeg');
+	background-size: cover;	
+}
+
+.welcome-services{
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	height: 550px;
+
+	.welcome-design{
+		display: inline-block;
+		width: 49.9%;
+		padding: 75px 0 0 0;
+		border-right: 1px solid #1C1C1C;
+		border-bottom: 20px solid #1C1C1C;
+
+		i{
+			color: $blue;
+			margin-bottom: 25px;
+		}
+
+		h3{
+			font-family: 'Ubuntu';
+			color: $logo;
+			margin: 0;
+		}
+
+		h1{
+			font-family: 'Oswald';
+			margin: 0 0 55px 0;
+		}
+
+		.welcome-desc{
+			background-color: #1C1C1C;
+			padding: 25px;
+
+			h2{
+				font-family: 'Lato';
+				color: #948F8F;
+				margin: -10px 0 15px 0;
+			}
+
+			a{
+				font-family: 'Lato';
+				font-weight: bold;
+				text-decoration: none;
+				color: $blue;
+				padding: 10px;
+				border: 1px solid $blue;
+			}
+
+			a:hover{
+				background-color: $blue;
+				color: black;
+			}
+		}
+	}
+
+	.welcome-dev{
+		@extend .welcome-design;
+		border-right: none;
+		border-left: 1px solid #1C1C1C;
+	}
+}
+
+.welcome-work{
+	text-align: center;
+	background-color: #1C1C1C;
+	padding: 300px 200px 200px 200px;
+
+	h1{
+		font-family: 'Oswald';
+		margin: 0;
+		color: white;
+	}
+
+	h2{
+		font-family: 'Lato';
+		color: #948F8F;
+	}
+
+	a{
+		font-family: 'Lato';
+		font-weight: bold;
+		text-decoration: none;
+		color: $logo;
+		padding: 10px;
+		border: 1px solid $logo;
+	}
+
+	a:hover{
+		background-color: $logo;
+		color: white;
+	}
+}
+
+.get-started{
+	background-image: url('/work_background.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 200px 200px;
+
+	h3{
+		color: $blue;
+		font-family: 'Ubuntu';
+		margin: 0;
+	}
+
+	h1{
+		font-family: 'Oswald';
+		margin: 0;
+	}
+
+	h2{
+		font-family: 'Lato';
+		color: #B0B0B0
+	}
+
+	a{
+		font-family: 'Lato';
+		font-weight: bold;
+		text-decoration: none;
+		color: $logo;
+		padding: 10px;
+		border: 1px solid $logo;
+	}
+
+	a:hover{
+		background-color: $logo;
+		color: white;
+	}
+}
+
+.arrow-up {
+	z-index: -1;
+	position: relative;
+	left: 47%;
+	top: 242px;
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #1C1C1C;
+}
+
+.arrow-down {
+	position: relative;
+	top: -25px;
+	left: 47%;
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid white;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.clear{
+	clear: both;
+}

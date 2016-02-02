@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BddCompanyWebsite</title>
+  <title>BDDCompanyWebsite</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link href='https://fonts.googleapis.com/css?family=Six+Caps|Oswald|Fjalla+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Six+Caps|Oswald|Fjalla+One|Ubuntu|Lato:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="/bennett_logo_circle.png">
 </head>
 <body>
 	<%= image_tag '/bennett_logo_trans.png', :id=>'logo' %>
 	<header>
-		<div class="nav">
+		<div class="nav" id="head-nav">
 			<ul>
 				<li><%= link_to 'ABOUT', '#' %></li>
 				<li><%= link_to 'SERVICES', '#' %></li>
@@ -19,8 +21,36 @@
 			</ul>
 		</div>
 	</header>
-
+	<div class="clear"></div>
 <%= yield %>
+
+	<footer>
+		<ul class="foot-nav">
+			<li>
+				<p>&copy 2016 Bennett D&D</p>
+			</li>
+			<li>
+				<ul class="social">
+					<li>
+						<a href="#">
+							<i class="fa fa-twitter fa-2x"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-facebook fa-2x"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-instagram fa-2x"></i>
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		
+	</footer>
 
 </body>
 </html>
